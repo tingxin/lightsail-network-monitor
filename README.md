@@ -55,10 +55,12 @@ cp .env.example .env
 # - 告警阈值: ALERT_THRESHOLD_MEDIUM/HIGH/CRITICAL
 
 # 3. 确保AWS凭证配置
-# 方式1: AWS CLI配置
+# 推荐
+运行的ec2配置相关全新的iam role
+# 方式2: AWS CLI配置
 aws configure
 
-# 方式2: 环境变量
+# 方式3: 环境变量
 export AWS_ACCESS_KEY_ID=your_access_key
 export AWS_SECRET_ACCESS_KEY=your_secret_key
 export AWS_DEFAULT_REGION=us-east-1
